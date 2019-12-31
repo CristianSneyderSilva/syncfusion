@@ -59,6 +59,8 @@ const modules = [
 ];
 
 import { SidebarModule, TreeViewModule } from '@syncfusion/ej2-angular-navigations';
+import { ModalComponent } from './components/modal/modal.component';
+import { EspecialComponent } from './components/especial/especial.component';
 
 
 @NgModule({
@@ -68,7 +70,9 @@ import { SidebarModule, TreeViewModule } from '@syncfusion/ej2-angular-navigatio
     SidebarComponents,
     HomeComponent,
     DatePickerComponent,
-    MultiSelectComponent
+    MultiSelectComponent,
+    ModalComponent,
+    EspecialComponent
   ],
   imports: [
     BrowserModule,

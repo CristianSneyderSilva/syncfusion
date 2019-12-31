@@ -1,0 +1,24 @@
+<!-- <button class="e-control e-btn"  id="targetButton" (click)="onOpenDialog($event)">Open Confirm Dialog</button>
+
+<ng-template #contenido>
+  <p>hola mundo</p>
+</ng-template> -->
+
+<button class="e-control e-btn" style="position: absolute;" id="targetButton" (click)="onOpenDialog($event)">{{ title }}</button>
+
+<div #container class='root-container'></div>
+<ejs-dialog id='dialog' #template showCloseIcon='true' [visible]="false" (open)="dialogOpen()" [height]='height' [target]='targetElement'>
+<ng-template #footerTemplate>
+      <input id="inVal" class="e-input" type="text" placeholder="Enter your message here!"/>
+      <button id="sendButton" class="e-control e-btn e-primary sendButton" data-ripple="true">Send</button>
+  </ng-template>
+  <ng-template #content>
+      <div class="dialogContent">
+        {{ component }}
+        <app-especial *ngIf="component == 'especial'" ></app-especial>
+      </div>
+  </ng-template>
+  <ng-template #header>
+      <div title="Nancy" class="e-icon-settings dlg-template"> Nancy </div>
+  </ng-template>
+</ejs-dialog>
