@@ -1,0 +1,24 @@
+.content {
+    width: 100%;
+}
+
+#contenido {
+    width: 100%;
+}
+
+.myspinner .black-overlay {
+    position: fixed !important;
+}
+
+.overlay {
+    position: fixed !important;
+}
+
+.col-lg-12 {
+    padding-right: 0.5px !important;
+    padding-left: 0 !important;
+}
+
+.main-content {
+    height: 90vh;
+}

@@ -1,0 +1,31 @@
+/**
+** @description Estilos Generales de SyncFusion, DatePicker
+**/
+
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-lists/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-angular-calendars/styles/material.css';
+
+/**
+**@description Estilos para Multi-Select
+**/
+
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-angular-dropdowns/styles/material.css';
+
+/**
+**@description Estilos para menu lateral
+**/
+
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+/**
+**@description Estilos para sidebar
+**/
+
+@import "../node_modules/@syncfusion/ej2-navigations/styles/material.css";

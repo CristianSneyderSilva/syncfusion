@@ -1,0 +1,24 @@
+.fa_color{
+    color: #DC0000;
+}
+
+.title-color{
+    color: #DC0000
+}
+
+
+.btn_color{
+    color: #fff;
+    background-color: #DC0000;
+    border-color: #DC0000;
+}
+
+.btn_color :hover{
+    background-color: #DC0000 !important; 
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #aa1a1a !important;
+    border-color: #8f1b17 !important;
+}
