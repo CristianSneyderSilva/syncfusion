@@ -4,7 +4,7 @@ import { CheckBoxSelectionService } from '@syncfusion/ej2-angular-dropdowns';
 @Component({
   selector: 'multi-multi-select',
   templateUrl: './multi-select.component.html',
-  styleUrls: ['./multi-select.component.css'],
+  styleUrls: ['./multi-select.component.scss'],
   providers: [CheckBoxSelectionService]
 })
 export class MultiSelectComponent implements OnInit {
@@ -13,23 +13,21 @@ export class MultiSelectComponent implements OnInit {
   public selectAllText: string
   constructor() {
   }
-  //set the data to dataSource property
+  //Asignar data
   public sportsData: Object[] =  [
-      { id: 'Game1', sports: 'Badminton' },
-      { id: 'Game2', sports: 'Basketball' },
-      { id: 'Game3', sports: 'Cricket' },
-      { id: 'Game4', sports: 'Football' },
-      { id: 'Game5', sports: 'Golf' }
+      { id: '1', sports: 'Convocatoria 646' },
+      { id: '2', sports: 'Convocatoria 647' },
+      { id: '3', sports: 'Convocatoria 749' }
   ];
-  // maps the appropriate column to fields property
+  // Asignamos el texto a la columna del id 
   public fields: Object = { text: 'sports', value: 'id' };
-  // set placeholder to MultiSelect input element
+  // Placeholder
   public placeholder: string = 'Seleccione una convocatoria';
   ngOnInit(): void {
-      // set the type of mode for checkbox to visualized the checkbox added in li element.
+      // Se selecciona el tipo del multiselect 
       this.mode = 'CheckBox';
-      // set the select all text to MultiSelect checkbox label.
-      this.selectAllText= 'Select All';
+      // Titulo para seleccionar todos
+      this.selectAllText= 'Seleccionar todos';
   }
 
 }

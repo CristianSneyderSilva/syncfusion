@@ -31,7 +31,7 @@ import { message } from 'src/app/functions/utilidades';
 @Component({
   selector: 'app-login-in',
   templateUrl: './login-in.component.html',
-  styleUrls: ['./login-in.component.css'],
+  styleUrls: ['./login-in.component.scss'],
   providers: []
 })
 

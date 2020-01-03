@@ -17,7 +17,8 @@ loadCldr(numberingSystems, gregorian, numbers, detimeZoneNames);
 
 @Component({
   selector: 'date-date-picker',
-  templateUrl: 'date-picker.component.html'
+  templateUrl: 'date-picker.component.html',
+  styleUrls: ['date-picker.component.scss']
 })
 export class DatePickerComponent implements OnInit {
 

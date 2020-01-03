@@ -14,12 +14,11 @@ import { AppComponent } from 'src/app/app.component';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css'],
+  styleUrls: ['./navbar.component.scss'],
   providers: []
 })
 export class NavbarComponent implements OnInit {
 
-  @ViewChild('sidebarTreeviewInstance', { static: false }) element: AppComponent
   @Input() sidebarTreeviewInstance: SidebarComponent;
 
   @ViewChild('treeviewInstance', { static: false })
@@ -45,6 +44,7 @@ export class NavbarComponent implements OnInit {
 
   ) { }
   ngOnInit(): void {
+    console.log("SIDEBAR" + this.sidebarTreeviewInstance)
 
   }
   cerrarSesion() {

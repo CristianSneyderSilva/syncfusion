@@ -1,3 +1,32 @@
+/* =============================================*/
+/* ARQUITECTURA ITCSS - BEMIT */
+/*================================================*/
+
+
+//SETTINGS 
+//@import 'assets/settings/';
+//TOOLS
+@import 'assets/tools/mixins';
+//GENERIC
+//@import 'assets/generic/';
+//ELEMENTS
+//@import 'assets/elements/';
+//OBJECTS
+//@import 'assets/objects/';
+//COMPONENTS
+//@import 'assets/components/';
+//UTILITIES
+//@import 'assets/utilities/';
+/* =============================================*/
+/* FIN ARQUITECTURA ITCSS - BEMIT */
+/*================================================*/
+
+
+/*===============================================
+ESTILOS SYNCFUSION
+=================================================*/
+
+
 /**
 ** @description Estilos Generales de SyncFusion, DatePicker
 **/
@@ -29,3 +58,13 @@
 **/
 
 @import "../node_modules/@syncfusion/ej2-navigations/styles/material.css";
+
+/**
+** Estilos para grid 
+**/
+
+@import '../node_modules/@syncfusion/ej2-angular-grids/styles/material.css';
+
+/*===============================================
+FIN ESTILOS SYNCFUSION
+=================================================*/

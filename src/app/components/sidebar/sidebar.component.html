@@ -1,11 +1,12 @@
 <app-navbar [sidebarTreeviewInstance]="sidebarTreeviewInstance">
 </app-navbar>
-<ejs-sidebar id="sidebar-treeview" class="dock-menu" #sidebarTreeviewInstance [enableDock]='enableDock' [width]='width' [dockSize]='dockSize' style="visibility: hidden" [mediaQuery]='mediaQuery' [target]='target'>
+<ejs-sidebar id="sidebar-treeview" class="dock-menu" #sidebarTreeviewInstance [enableDock]='enableDock' [width]='width'
+    [dockSize]='dockSize' style="visibility: hidden" [mediaQuery]='mediaQuery' [target]='target'>
     <div class="main-menu">
         <div>
             <!-- Treevie element declaration -->
-            <ejs-treeview id="main-treeview" #treeviewInstance [fields]='field' expandOn='Click'></ejs-treeview>
-
+            <ejs-treeview id="main-treeview" #treeviewInstance [fields]='field' expandOn='Click'
+                (nodeSelected)="loadRoutingContent($event)"></ejs-treeview>
         </div>
     </div>
 </ejs-sidebar>

@@ -1,0 +1,117 @@
+/*
+Contenedor Home
+*/
+
+.container-home {
+    margin-top: 5%;
+}
+
+/* Tamaño del scroll */
+.container::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+
+.line {
+    border: 1px solid black;
+    width: 41%;
+    float: right;
+    margin-top: 0vh;
+}
+
+.font-text {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.total {
+    float: right;
+    font-weight: bold;
+}
+
+.income__totales{
+    text-align: center;
+    font-size: 135%;
+}
+
+.fa-icon-eye {
+    float: right;
+    margin-right: -27%;
+}
+
+/**
+*Seccion de ingresos 
+**/
+
+.income {
+    margin-top: 10%;
+
+    &__title {
+        font-weight: bold;
+        font-size: 89%;
+    }
+
+    &--align {
+        text-align: center;
+    }
+
+    &__label {
+        float: right;
+    }
+
+    &__sign {
+        float: right;
+        //margin-left: 12%;
+    }
+
+    &__value {
+        font-size: 89%;
+        float: right;
+        margin-right: -13px;
+    }
+
+    &__financial-expenses {
+        margin-left: 16%;
+    }
+
+    &__container-content {
+        width: 86%;
+    }
+
+    &__container-sign {
+        margin-left: 14%;
+    }
+
+    &__container-value {
+        float: right;
+    }
+
+    &__container-line {
+        border: 1px solid black;
+        width: 86%;
+        float: right;
+        margin-top: 0vh;
+    }
+    /*Totales*/
+    &__totales{
+        text-align: center;
+        font-size: 135%;
+    }
+}
+
+
+/*Egresos*/
+
+.expenses {
+    margin-top: 10%;
+
+    &__title {
+        font-weight: bold;
+        font-size: 89%;
+    }
+    &__totales{
+        text-align: center;
+        font-size: 135%;
+    }
+}

@@ -1,0 +1,154 @@
+<!--Modales-->
+
+<i class="fa-icon-eye fa fa-eye" id="targetButton" (click)="onOpenDialog($event)">{{ title }}</i>
+
+<div #container class='root-container'></div>
+<ejs-dialog class="modal" id='dialog' #template isModal='true' (overlayClick)="onOverlayClick()" [visible]="false"
+    [height]='height' [target]='targetElement'>
+    <ng-template #header>
+        <!--Espacio para el header de la modal-->
+    </ng-template>
+    <ng-template #content>
+        <div class="dialogContent">
+            <!--Contenido de la modal-->
+            <div *ngIf="type == 'solicitud' then solicitudRecursos"></div>
+            <div *ngIf="type == 'recursos'">
+                <table-tables></table-tables>
+            </div>
+        </div>
+    </ng-template>
+    <ng-template #footerTemplate>
+        <!--Espacio para el footer de la modal-->
+        <button (click)="onCloseClick()" class="modal__button-footer">Salir</button>
+    </ng-template>
+</ejs-dialog>
+
+<ng-template #solicitudRecursos>
+    <div class="row">
+        <div class="col-md-12">
+            <!--Inicia contenido-->
+            <span class="modal__title">Convocatoria 646 de 2014</span><br><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="modal__content">21 de junio de 2018</span>
+                </div>
+                <div class="col-md-6">
+                    <div class="modal__contenedor-content">
+                        <i class="modal__signo fa fa-usd" aria-hidden="true"></i>
+                        <span class="modal__value"> 1.532.622.264 </span>
+                        <hr class="modal__line">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="modal__subtotal-label">Subtotal</span>
+                </div>
+                <div class="col-md-6">
+                    <div class="modal__contenedor-subtotal">
+                        <i class="modal__subtotal-sign fa fa-usd" aria-hidden="true"></i>
+                        <span class="modal__subtotal-value"> 1.532.622.264 </span>
+                    </div>
+                </div>
+            </div>
+            <!--Finaliza contenido-->
+            <br><br>
+
+            <!--Inicia contenido-->
+            <span class="modal__title">Convocatoria 647 de 2014</span><br><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="modal__content">21 de junio de 2018</span>
+                </div>
+                <div class="col-md-6">
+                    <div class="modal__contenedor-content">
+                        <i class="modal__signo fa fa-usd" aria-hidden="true"></i>
+                        <span class="modal__value"> 13.365.516.590 </span>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <span class="modal__content">28 de agosto de 2018</span>
+                </div>
+                <div class="col-md-6">
+                    <div class="modal__contenedor-content">
+                        <i class="modal__signo fa fa-usd" aria-hidden="true"></i>
+                        <span class="modal__value"> 130.000.000 </span>
+                        <hr class="modal__line">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="modal__subtotal-label">Subtotal</span>
+                </div>
+                <div class="col-md-6">
+                    <div class="modal__contenedor-subtotal">
+                        <i class="modal__subtotal-sign fa fa-usd" aria-hidden="true"></i>
+                        <span class="modal__subtotal-value"> 13.495.516.590 </span>
+                    </div>
+                </div>
+            </div>
+            <!--Finaliza contenido-->
+            <br>
+
+            <!--Inicia contenido-->
+            <span class="modal__title">Convocatoria 679 de 2014</span><br><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="modal__content">19 de junio de 2018</span>
+                </div>
+                <div class="col-md-6">
+                    <div class="modal__contenedor-content">
+                        <i class="modal__signo fa fa-usd" aria-hidden="true"></i>
+                        <span class="modal__value"> 51.684.063 </span>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <span class="modal__content">21 de junio de 2018</span>
+                </div>
+                <div class="col-md-6">
+                    <div class="modal__contenedor-content">
+                        <i class="modal__signo fa fa-usd" aria-hidden="true"></i>
+                        <span class="modal__value"> 1.489.671.673 </span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <span class="modal__content">2 de octubre de 2018</span>
+                </div>
+                <div class="col-md-6">
+                    <div class="modal__contenedor-content">
+                        <i class="modal__signo fa fa-usd" aria-hidden="true"></i>
+                        <span class="modal__value"> 434.757.911 </span>
+                        <hr class="modal__line">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="modal__subtotal-label">Subtotal</span>
+                </div>
+                <div class="col-md-6">
+                    <div class="modal__contenedor-subtotal">
+                        <i class="modal__subtotal-sign fa fa-usd" aria-hidden="true"></i>
+                        <span class="modal__subtotal-value"> 13.495.516.590 </span>
+                    </div>
+                </div>
+            </div>
+            <!--Finaliza contenido-->
+            <br><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="modal__total-label">Total</span>
+                </div>
+                <div class="col-md-6">
+                    <div class="modal__contenedor-total">
+                        <i class="modal__total-sign fa fa-usd" aria-hidden="true"></i>
+                        <span class="modal__total-value"> 17.004.252.501 </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-template>

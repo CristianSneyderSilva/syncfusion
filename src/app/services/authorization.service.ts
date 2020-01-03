@@ -34,7 +34,6 @@ export class AuthorizationService {
       cognitoUser.authenticateUser(authenticationDetails, {
         onSuccess: function (result) {
 
-          //console.log(result);
           observer.next(result);
           observer.complete();
         },

@@ -1,0 +1,100 @@
+/*Estilos generales del contenedor*/
+.e-dlg-header-content {
+    height: 6vh !important;
+    padding: 5px !important;
+}
+
+.e-btn.e-dlg-closeicon-btn {
+    width: 7vh !important;
+    margin-right: 1% !important;
+}
+
+/*Fin estilos generales*/
+.modal {
+    width: 35%;
+    border-radius: 2%;
+    max-height: 100%;
+
+    &__title {
+        font-size: 113%;
+        font-weight: bold;
+    }
+
+    &__contenedor-content {
+        width: 70%;
+    }
+
+    &__content {
+        float: right;
+    }
+
+    &__signo {
+        margin-left: 3%;
+    }
+
+    &__value {
+        float: right;
+    }
+
+    &__line {
+        width: 100%;
+        margin-left: 2%;
+        margin-top: 1%;
+        border: 0.3vh solid black;
+    }
+
+    /*Subtotal*/
+
+    &__contenedor-subtotal {
+        width: 70%;
+    }
+
+    &__subtotal-label {
+        float: right;
+        font-weight: bold;
+        font-size: 115%;
+    }
+
+    &__subtotal-sign {
+        margin-left: 3%;
+    }
+
+    &__subtotal-value {
+        float: right;
+    }
+
+    /*Total*/
+    &__contenedor-total {
+        width: 70%;
+    }
+
+    &__total-label {
+        float: right;
+        font-weight: bold;
+        font-size: 115%;
+    }
+
+    &__total-sign {
+        margin-left: 3%;
+    }
+
+    &__total-value {
+        float: right;
+    }
+
+    &__button-footer {
+        width: 36%;
+        border-radius: 7px;
+        background-color: #ffffff;
+        margin-right: 33%;
+        border: 1px solid;
+
+        &:hover {
+            border-color: #DC0000;
+        }
+    }
+}
+
+.fa-icon-eye {
+    margin-top: -1%;
+}

@@ -29,7 +29,6 @@ import { Ng4LoadingSpinnerModule } from 'ng4-loading-spinner';
 //#endregion modulos externos
 
 
-import { DialogModule } from '@syncfusion/ej2-angular-popups';
 
 //#DatePicker
 import { DatePickerComponent } from './components/date-picker/date-picker.component';
@@ -46,9 +45,10 @@ import { MultiSelectComponent } from './components/multi-select/multi-select.com
 import {MatStepperModule} from '@angular/material/stepper';
 import { MatRippleModule } from '@angular/material/core';
 
-import { MatInputModule, MatTableModule, MatPaginatorModule, MatSortModule,MatFormFieldModule,MatButtonModule } from '@angular/material'
+import { MatInputModule,MatFormFieldModule,MatButtonModule } from '@angular/material'
 
 
+import { DialogModule } from '@syncfusion/ej2-angular-popups';
 import { DropDownListModule } from '@syncfusion/ej2-angular-dropdowns';
 
 const modules = [
@@ -58,26 +58,32 @@ const modules = [
   MatRippleModule
 ];
 
+/*Componentes */
 import { SidebarModule, TreeViewModule } from '@syncfusion/ej2-angular-navigations';
-import { ModalComponent } from './components/modal/modal.component';
-import { EspecialComponent } from './components/especial/especial.component';
+import { CardsComponent } from './components/cards/cards.component';
+import { TablesComponent } from './components/tables/tables.component';
 
+/*Modulo de tablas */
+import { GridModule } from '@syncfusion/ej2-angular-grids';
+import { PageService, SortService, FilterService, GroupService, SearchService,ToolbarService} from '@syncfusion/ej2-angular-grids';
 
+/*Fin Modulo de tablas */
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     SidebarComponents,
+    CardsComponent,
     HomeComponent,
     DatePickerComponent,
     MultiSelectComponent,
-    ModalComponent,
-    EspecialComponent
+    TablesComponent
   ],
   imports: [
     BrowserModule,
     routing,
     HttpClientModule,
+    DialogModule,
     NgbModule,
     FormsModule,
     ReactiveFormsModule,
@@ -94,15 +100,21 @@ import { EspecialComponent } from './components/especial/especial.component';
     SidebarModule,
     TreeViewModule,
     DropDownListModule,
-    DialogModule
+    GridModule
   ],
   providers: [
     { provide: LocationStrategy, useClass: HashLocationStrategy },
     appRoutingProviders,
-    DecimalPipe
+    DecimalPipe,
+    SearchService,
+    ToolbarService,
+    PageService, 
+    SortService, 
+    FilterService, 
+    GroupService
   ],
   bootstrap: [AppComponent]
-
+  
 })
 
 export class AppModule { }

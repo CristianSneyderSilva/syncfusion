@@ -13,16 +13,13 @@ import { SidebarComponent, TreeViewComponent } from '@syncfusion/ej2-angular-nav
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  styleUrls: ['./app.component.scss'],
   providers: []
 })
 export class AppComponent implements OnInit, OnChanges, DoCheck {
   
   public mostrarMenus: boolean;
   public isDentity: boolean;
-
-
-
 
   constructor(
     // tslint:disable-next-line: variable-name

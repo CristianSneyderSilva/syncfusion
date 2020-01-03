@@ -1,38 +1,555 @@
-<!-- <div class="container">
-  <div class="row">
-    <div class="col-md-10">
-      <div class="row">
-        <div class="col-md-5">
-          <multi-multi-select></multi-multi-select>
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+            <div class="row">
+                <div class="col-md-5">
+                    <multi-multi-select></multi-multi-select>
+                </div>
+                <div class="col-md-5">
+                    <date-date-picker></date-date-picker>
+                </div>
+            </div>
         </div>
-        <div class="col-md-5">
-          <date-date-picker></date-date-picker>
-        </div>
-      </div>
     </div>
-  </div>
+    <!-- CONTENEDOR-->
+    <div class="container-home row">
+        <!--INGRESOS-->
+        <div class="col-md-6">
+            <h2>Ingresos</h2>
+            <div class="income row">
+                <div class="col-md-6">
+                    <span class="income__title">Saldos al 31 de diciembre de 2017</span>
+                </div>
+                <div class="income--align col-md-6">
+                    <span class="income__title">Valor </span>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="income__label">Convocatoria 646</span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="income__container-content">
+                                <i class="income__container-sign  fa fa-usd" aria-hidden="true"></i>
+                                <span class="income__container-value">556.668.757</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="income__label">Convocatoria 647</span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="income__container-content">
+                                <i class="income__container-sign  fa fa-usd" aria-hidden="true"></i>
+                                <span class="income__container-value">1.328.656</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="income__label">Convocatoria 679</span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="income__container-content">
+                                <i class="income__container-sign  fa fa-usd" aria-hidden="true"></i>
+                                <span class="income__container-value">621.213.5286</span>
+                                <hr class="income__container-line">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="total"> Total Solicitudes </span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <i class="income__sign fa fa-usd" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-md-7">
+                                    <span class="total income__value">1.179.230.940</span>
+                                </div>
+                                <div class="col-md-1">
+                                    <card-cards type="solicitud"></card-cards>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--FIN INGRESOS-->
+
+        <!--EGRESOS-->
+        <div class="col-md-6">
+            <h2>Egresos</h2>
+            <div class="expenses row">
+                <div class="col-md-6">
+                    <span class="expenses__title">Desembolsos</span>
+                </div>
+                <div class="income--align col-md-6">
+                    <span class="expenses__title">Valor</span>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="income__label">Convocatoria 646</span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="income__container-content">
+                                <i class="income__container-sign  fa fa-usd" aria-hidden="true"></i>
+                                <span class="income__container-value"> 2.133.615.170 </span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="income__label">Convocatoria 647</span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="income__container-content">
+                                <i class="income__container-sign  fa fa-usd" aria-hidden="true"></i>
+                                <span class="income__container-value"> 13.474.831.179 </span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="income__label">Convocatoria 679</span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="income__container-content">
+                                <i class="income__container-sign  fa fa-usd" aria-hidden="true"></i>
+                                <span class="income__container-value"> 2.319.322.602 </span>
+                                <hr class="income__container-line">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="total"> Total Desembolsos </span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <i class="income__sign fa fa-usd" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-md-7">
+                                    <span class="total income__value">1.179.230.940</span>
+                                </div>
+                                <div class="col-md-2">
+                                    <card-cards type="saldos"></card-cards>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--FIN EGRESOS-->
+    </div>
+    <!--Fin primera linea contendedor-->
+    <div class="row">
+        <!--INGRESOS-->
+        <div class="col-md-6">
+            <div class="income row">
+                <div class="col-md-6">
+                    <span class="income__title">Solicitudes de recursos</span>
+                </div>
+                <div class="income--align col-md-6">
+                    <span class="income__title">Valor </span>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="income__label">Convocatoria 646</span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="income__container-content">
+                                <i class="income__container-sign  fa fa-usd" aria-hidden="true"></i>
+                                <span class="income__container-value"> 1.532.622.264 </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="income__label">Convocatoria 647</span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="income__container-content">
+                                <i class="income__container-sign  fa fa-usd" aria-hidden="true"></i>
+                                <span class="income__container-value"> 13.495.516.590 </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="income__label">Convocatoria 679</span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="income__container-content">
+                                <i class="income__container-sign  fa fa-usd" aria-hidden="true"></i>
+                                <span class="income__container-value"> 1.976.113.647 </span>
+                                <hr class="income__container-line">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="total"> Total Solicitudes </span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <i class="income__sign fa fa-usd" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-md-7">
+                                    <span class="total income__value"> 17.004.252.501 </span>
+                                </div>
+                                <div class="col-md-2">
+                                    <card-cards type="recursos"></card-cards>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--FIN INGRESOS-->
+            </div>
+        </div>
+        <!--EGRESOS-->
+        <div class="col-md-6">
+            <div class="expenses row">
+                <div class="col-md-6">
+                    <span class="expenses__title">(+) Gastos Financieros</span><br>
+                    <p class="expenses__title">4 * 1000 (GMF) y Costos Financieros</p>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="income__label">Convocatoria 646</span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="income__container-content">
+                                <i class="income__container-sign  fa fa-usd" aria-hidden="true"></i>
+                                <span class="income__container-value"> 6.828.767 </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="income__label">Convocatoria 647</span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="income__container-content">
+                                <i class="income__container-sign  fa fa-usd" aria-hidden="true"></i>
+                                <span class="income__container-value"> 13.495.516.590 </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="income__label">Convocatoria 679</span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="income__container-content">
+                                <i class="income__container-sign  fa fa-usd" aria-hidden="true"></i>
+                                <span class="income__container-value"> 7.129.469 </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="income__label">Diferencia en cambio Conv 646</span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="income__container-content">
+                                <i class="income__container-sign  fa fa-usd" aria-hidden="true"></i>
+                                <span class="income__container-value"> - </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Row Final-->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="income__label">Diferencia en cambio Conv 679</span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="income__container-content">
+                                <i class="income__container-sign  fa fa-usd" aria-hidden="true"></i>
+                                <span class="income__container-value"> - </span>
+                                <hr class="income__container-line">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="total"> Total Gastos Financieros </span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <i class="income__sign fa fa-usd" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-md-7">
+                                    <span class="total income__value"> 17.004.252.501 </span>
+                                </div>
+                                <div class="col-md-2">
+                                    <card-cards type="solicitud"></card-cards>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--FIN EGRESOS-->
+    </div>
+    <!--Fin linea contenedor-->
+
+    <!--Fin primera linea contendedor-->
+    <div class="row">
+        <!--Recaudos-->
+        <div class="col-md-6">
+            <div class="income row">
+                <div class="col-md-6">
+                    <span class="income__title">(+) Recaudos y Devoluciones</span>
+                </div>
+                <!--div class="income--align col-md-6">
+                    <span class="income__title">Valor </span>
+                </div-->
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="income__label">Convocatoria 646</span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="income__container-content">
+                                <i class="income__container-sign  fa fa-usd" aria-hidden="true"></i>
+                                <span class="income__container-value">  1.195.211  </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="income__label">Convocatoria 647</span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="income__container-content">
+                                <i class="income__container-sign  fa fa-usd" aria-hidden="true"></i>
+                                <span class="income__container-value"> 850.244  </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="income__label">Convocatoria 679</span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="income__container-content">
+                                <i class="income__container-sign  fa fa-usd" aria-hidden="true"></i>
+                                <span class="income__container-value">  844.826  </span>
+                                <hr class="income__container-line">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="total"> Total Rendimientos Financieros </span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <i class="income__sign fa fa-usd" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-md-7">
+                                    <span class="total income__value"> 2.890.281  </span>
+                                </div>
+                                <div class="col-md-2">
+                                    <card-cards type="solicitud"></card-cards>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--FIN INGRESOS-->
+            </div>
+        </div>
+        <!--EGRESOS-->
+        <div class="col-md-6">
+            <div class="expenses row">
+                <div class="col-md-6">
+                    <span class="expenses__title">Saldos</span><br>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="income__label">Convocatoria 646</span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="income__container-content">
+                                <i class="income__container-sign  fa fa-usd" aria-hidden="true"></i>
+                                <span class="income__container-value"> 12.814.318  </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="income__label">Convocatoria 647</span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="income__container-content">
+                                <i class="income__container-sign  fa fa-usd" aria-hidden="true"></i>
+                                <span class="income__container-value"> 9.589.109  </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Row Final-->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="income__label">Convocatoria 679</span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="income__container-content">
+                                <i class="income__container-sign  fa fa-usd" aria-hidden="true"></i>
+                                <span class="income__container-value">  293.697.480 </span>
+                                <hr class="income__container-line">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="total"> Total Saldos </span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <i class="income__sign fa fa-usd" aria-hidden="true"></i>
+                                </div>
+                                <div class="col-md-7">
+                                    <span class="total income__value"> 17.004.252.501 </span>
+                                </div>
+                                <div class="col-md-2">
+                                    <card-cards type="solicitud"></card-cards>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--FIN EGRESOS-->
+    </div>
+    <!--Fin linea contenedor-->
+    <br><br>
+    <!--Totales-->
+    <div class="row">
+        <div class="col-md-6">
+            <div class="income__totales row">
+                <div class=" col-md-6">
+                    <span class="total"> Total Ingresos </span>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <i class="income__sign fa fa-usd" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-md-8">
+                            <span class="total income__value"> 18.292.363.101  </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class=" expenses__totales row">
+                <div class="col-md-6">
+                    <span class="total"> Total Egresos + Total Saldos </span>
+                </div>
+                <div class="col-md-6">
+                    <div class=" row">
+                        <div class="col-md-3">
+                            <i class="income__sign fa fa-usd" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-md-8">
+                            <span class="total income__value"> 18.292.363.101  </span>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
 </div>
+<br><br><br>
 
-
-<button
-  class="e-control e-btn"
-  style="position: absolute;"
-  id="targetButton"
-  (click)="onOpenDialog($event)"
->
-  Open Modal Dialog
-</button>
-
-<div #container class="root-container"></div>
-<ejs-dialog
-  id="dialog"
-  #ejDialog
-  isModal="true"
-  (overlayClick)="onOverlayClick()"
-  content="This is a modal dialog"
-  [target]="targetElement"
-  width="250px"
->
-</ejs-dialog> -->
-
-<app-modal title="Abrir esto" component="espsssecial" content="Este es el contenido <b>del modals</b> ..."></app-modal>
+<table-tables></table-tables>
